@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css"/>
+        </head>
+        <body>
+          <header>
+              <div class="container">
+                    <h1 class="logo">MyPortfolio</h1>
+                          <nav id="navbar">
+                                  <ul class="nav-links">
+                                            <li><a href="#home">Home</a></li>
+                                                      <li><a href="#projects">Projects</a></li>
+                                                                <li><a href="#contact">Contact</a></li>
+                                                                        </ul>
+                                                                                <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+                                                                                      </nav>
+                                                                                          </div>
+                                                                                            </header>
+  <section id="home" class="hero">
+      <div class="container">
+            <h2>Hi, I'm Abc</h2>
+                  <p>Web Developer | Designer | Creator</p>
+                        <a href="#projects" class="btn">View My Work</a>
+                            </div>
+                              </section>
+  <section id="projects">
+      <div class="container">
+            <h2>Projects</h2>
+                  <div class="project-list">
+                          <div class="project-card">
+                                    <h3>library management system</h3>
+                                              <p>The main objective of the Project on Library 
+                                                Management System is to manage the details of Student, Books, Issues, Librarian, Member. It 
+                                                manages all the information about Student, Address of Member as well as Student. The project is 
+                                                totally built at administrative end and thus only the administrator is guaranteed the access. The 
+                                                purpose of the project is to build a web-based application program to reduce the manual work for 
+                                                managing the Student, Books, Address, Issues. It tracks all the details about the Issues, Librarian, 
+                                                Member, etc.</p>
+                                                      </div>
+                                                              <div class="project-card">
+                                                                        <h3>online foodordering system</h3>
+                                                                                  <p>To design, develop, and implement a 
+                                                                                    user-friendly online food ordering system using Python and Django framework, streamlining the 
+                                                                                    food ordering process, enhancing customer experience, and increasing restaurant efficiency. With 
+                                                                                    expertise in Python and Django, I can develop a robust and scalable online food ordering system, 
+                                                                                    leveraging Django's ORM for database management and utilizing its built-in features for 
+                                                                                    authentication, authorization, and templating. The system will provide an easy-to-use interface for 
+                                                                                    customers, automate and optimize the ordering process, and offer features such as order tracking, 
+                                                                                    real-time updates, and personalized recommendations</p>
+                                                                                          </div>
+                                                                                                </div>
+                                                                                                    </div>
+                                                                                                      </section>
+  <section id="contact">
+      <div class="container">
+            <h2>Contact Me</h2>
+                  <p>Email: abc@example.com</p>
+                        <p>LinkedIn: linkedin.com/in/yourprofile</p>;
+                            </div>
+                              </section>
+  <footer>
+      <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+                </div>
+                  </footer>
+  <script src="script.js"></script>
+  </body>
+  </html>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+.logo {
+  float: left;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+}
+.hero {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#projects, #contact {
+  padding: 60px 0;
+}
+.project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: white;
+  padding: 20px;
+  flex: 1 1 45%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .project-card {
+    flex: 1 1 100%;
+  }
+}
+</style>
+<script>
+{% comment %} function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+    links.classList.toggle('active');
+    }
+</script> {% endcomment %}
+   
